@@ -1,0 +1,572 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+html {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: rgb(211, 206, 206);
+  font-size: clamp(14px, 1vw, 18px);
+}
+
+body {
+  background-color: rgb(22, 22, 22);
+}
+
+section {
+  max-width: 2000px;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  align-items: center;
+}
+main section.view1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+main section.view1 .top {
+  width: 100%;
+}
+main section.view1 .top img {
+  width: 100%;
+  border-radius: 0.7rem;
+}
+main section.view1 .bottom {
+  width: 100%;
+  background-color: rgb(36, 35, 35);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1.5rem;
+  border-radius: 0.7rem;
+}
+main section.view1 .bottom .text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+main section.view1 .bottom .text h1 {
+  font-weight: 400;
+  font-size: 2.5rem;
+}
+main section.view1 .bottom .text > p {
+  font-size: 1.5rem;
+  font-weight: 100;
+  opacity: 0.7;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+main section.view1 .bottom .text .button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+main section.view1 .bottom .text .button button {
+  width: -moz-fit-content;
+  width: fit-content;
+  color: rgb(211, 206, 206);
+  border: 0.5px solid rgb(211, 206, 206);
+  outline: none;
+  padding: 0.8rem 0.8rem;
+  border-radius: 50%;
+  background-color: transparent;
+}
+main section.view1 .bottom .text .button p {
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+main section.view2 {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  width: 100%;
+  padding: 1rem;
+}
+main section.view2 .top, main section.view2 .bottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+main section.view2 .top .element, main section.view2 .bottom .element {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+}
+main section.view2 .top .element h2, main section.view2 .bottom .element h2 {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+main section.view2 .top .element small, main section.view2 .bottom .element small {
+  font-size: 1rem;
+}
+main section.view3 {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main section.view3 .right-top {
+  width: 100%;
+}
+main section.view3 .right-top img {
+  width: 100%;
+  border-radius: 0.7rem;
+}
+main section.view3 .left-top {
+  width: 100%;
+  background-color: rgb(36, 35, 35);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  border-radius: 0.7rem;
+  padding: 1.5rem;
+}
+main section.view3 .left-top > p {
+  text-transform: uppercase;
+}
+main section.view3 .left-top .text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+main section.view3 .left-top .text h1 {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 2.5rem;
+}
+main section.view3 .left-top .text .paragraphs p {
+  font-size: 1.5rem;
+  font-weight: 100;
+  opacity: 0.7;
+  line-height: 1.5;
+}
+main section.view3 .bottom-left {
+  width: 100%;
+}
+main section.view3 .bottom-left img {
+  width: 100%;
+  border-radius: 0.7rem;
+}
+main section.view3 .bottom-right {
+  width: 100%;
+  background-color: rgb(36, 35, 35);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  border-radius: 0.7rem;
+  padding: 1.5rem;
+}
+main section.view3 .bottom-right > p {
+  text-transform: uppercase;
+}
+main section.view3 .bottom-right .text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+main section.view3 .bottom-right .text h1 {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 2.5rem;
+}
+main section.view3 .bottom-right .text .paragraphs p {
+  font-size: 1.5rem;
+  font-weight: 100;
+  opacity: 0.7;
+  line-height: 1.5;
+}
+main section.view4 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem 2rem;
+}
+main section.view4 > h1 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+main section.view4 .button {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  display: none;
+}
+main section.view4 .button button {
+  color: rgb(211, 206, 206);
+  border: 0.5px solid rgb(211, 206, 206);
+  outline: none;
+  padding: 0.7rem 0.7rem;
+  border-radius: 50%;
+  background-color: transparent;
+}
+main section.view4 .button h3 {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+main section.view5 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  width: 100%;
+}
+main section.view5 .card:nth-child(1) {
+  width: 100%;
+  background-image: url(./card1.webp);
+  background-size: cover;
+  aspect-ratio: 1/1;
+  border-radius: 0.7rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  justify-content: space-between;
+  padding: 1rem;
+}
+main section.view5 .card:nth-child(1) .icon, main section.view5 .card:nth-child(1) .bottom {
+  background-color: rgba(77, 72, 72, 0.377);
+  backdrop-filter: blur(10px);
+  border-radius: 0.7rem;
+  padding: 0.5rem;
+}
+main section.view5 .card:nth-child(1) .icon {
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 50%;
+  border: 1px solid white;
+  aspect-ratio: 1;
+  text-align: center;
+}
+main section.view5 .card:nth-child(1) .top, main section.view5 .card:nth-child(1) .bottom {
+  display: flex;
+}
+main section.view5 .card:nth-child(1) .top {
+  padding: 1.5rem;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+main section.view5 .card:nth-child(1) .bottom {
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+main section.view5 .card:nth-child(1) .bottom .name {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+main section.view5 .card:nth-child(1) .bottom p {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+main section.view5 .card:nth-child(2) {
+  width: 100%;
+  background-image: url(./card2.webp);
+  background-size: cover;
+  aspect-ratio: 1/1;
+  border-radius: 0.7rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  justify-content: space-between;
+  padding: 1rem;
+}
+main section.view5 .card:nth-child(2) .icon, main section.view5 .card:nth-child(2) .bottom {
+  background-color: rgba(77, 72, 72, 0.377);
+  backdrop-filter: blur(10px);
+  border-radius: 0.7rem;
+  padding: 0.5rem;
+}
+main section.view5 .card:nth-child(2) .icon {
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 50%;
+  border: 1px solid white;
+  aspect-ratio: 1;
+  text-align: center;
+}
+main section.view5 .card:nth-child(2) .top, main section.view5 .card:nth-child(2) .bottom {
+  display: flex;
+}
+main section.view5 .card:nth-child(2) .top {
+  padding: 1.5rem;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+main section.view5 .card:nth-child(2) .bottom {
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+main section.view5 .card:nth-child(2) .bottom .name {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+main section.view5 .card:nth-child(2) .bottom p {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+main section.view5 .card:nth-child(3) {
+  width: 100%;
+  background-image: url(./card3.webp);
+  background-size: cover;
+  aspect-ratio: 1/1;
+  border-radius: 0.7rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  justify-content: space-between;
+  padding: 1rem;
+}
+main section.view5 .card:nth-child(3) .icon, main section.view5 .card:nth-child(3) .bottom {
+  background-color: rgba(77, 72, 72, 0.377);
+  backdrop-filter: blur(10px);
+  border-radius: 0.7rem;
+  padding: 0.5rem;
+}
+main section.view5 .card:nth-child(3) .icon {
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 50%;
+  border: 1px solid white;
+  aspect-ratio: 1;
+  text-align: center;
+}
+main section.view5 .card:nth-child(3) .top, main section.view5 .card:nth-child(3) .bottom {
+  display: flex;
+}
+main section.view5 .card:nth-child(3) .top {
+  padding: 1.5rem;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+main section.view5 .card:nth-child(3) .bottom {
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+main section.view5 .card:nth-child(3) .bottom .name {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+main section.view5 .card:nth-child(3) .bottom p {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+main section.view6 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0rem 1rem;
+  padding-bottom: 1rem;
+}
+main section.view6 .image {
+  width: 100%;
+  display: none;
+}
+main section.view6 .image img {
+  width: 100%;
+  border-radius: 0.7rem;
+}
+main section.view6 .top {
+  width: 100%;
+  padding: 1.5rem;
+  background-color: rgb(36, 35, 35);
+  border-radius: 0.7rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  justify-content: space-between;
+}
+main section.view6 .top .text {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+main section.view6 .top .text p {
+  text-transform: uppercase;
+}
+main section.view6 .top .text h1 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+main section.view6 .top .button {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+main section.view6 .top .button button {
+  color: rgb(211, 206, 206);
+  border: 0.5px solid rgb(211, 206, 206);
+  outline: none;
+  padding: 0.7rem 0.7rem;
+  border-radius: 50%;
+  background-color: transparent;
+}
+main section.view6 .top .button h3 {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+main section.view6 .bottom {
+  width: 100%;
+  padding: 1.5rem;
+  background-color: #CEBD63;
+  color: black;
+  border-radius: 0.7rem;
+}
+main section.view6 .bottom .text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main section.view6 .bottom .text p {
+  text-transform: uppercase;
+}
+main section.view6 .bottom .text h1 {
+  width: 90%;
+  text-transform: uppercase;
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 400;
+  opacity: 0.8;
+}
+main section.view6 .bottom .text button {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1rem 1.2rem;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  background-color: black;
+  color: white;
+  border-radius: 0.7rem;
+}
+
+@media (min-width: 900px) {
+  main section.view1 {
+    flex-direction: row;
+    padding: 1rem 3rem;
+  }
+  main section.view1 .top, main section.view1 .bottom {
+    width: 50%;
+  }
+  main section.view1 .bottom {
+    justify-content: space-between;
+    padding: 2.5rem;
+    gap: 1.5rem;
+  }
+  main section.view1 .bottom .text h1 {
+    font-size: 3rem;
+  }
+  main section.view1 .bottom .text p {
+    font-size: 1.5rem;
+  }
+  main section.view2 {
+    flex-direction: row;
+    padding: 3rem 1rem;
+  }
+  main section.view2 .top .element h2, main section.view2 .bottom .element h2 {
+    font-size: 4rem;
+  }
+  main section.view3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "left-top right-top" "bottom-left bottom-right";
+    padding: 1rem 3rem;
+  }
+  main section.view3 .left-top {
+    grid-area: left-top;
+    justify-content: space-between;
+    padding: 2.5rem;
+    gap: 1.5rem;
+  }
+  main section.view3 .left-top .text h1 {
+    font-size: 3rem;
+  }
+  main section.view3 .left-top .text p {
+    font-size: 1.5rem;
+    -moz-columns: 2;
+         columns: 2;
+    -moz-column-gap: 1.5rem;
+         column-gap: 1.5rem;
+  }
+  main section.view3 .right-top {
+    grid-area: right-top;
+  }
+  main section.view3 .bottom-left {
+    grid-area: bottom-left;
+  }
+  main section.view3 .bottom-right {
+    justify-content: space-between;
+    padding: 2.5rem;
+    gap: 1.5rem;
+  }
+  main section.view3 .bottom-right .text h1 {
+    font-size: 3rem;
+  }
+  main section.view3 .bottom-right .text p {
+    font-size: 1.5rem;
+    -moz-columns: 2;
+         columns: 2;
+    -moz-column-gap: 1.5rem;
+         column-gap: 1.5rem;
+  }
+  main section.view4 {
+    padding: 2.5rem 4rem;
+  }
+  main section.view4 .button {
+    display: flex;
+  }
+  main section.view5 {
+    flex-direction: row;
+    padding: 1rem 3rem;
+  }
+  main section.view6 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 20rem;
+    grid-template-areas: "image top" "bottom bottom";
+    padding: 1rem 3rem;
+  }
+  main section.view6 .image {
+    grid-area: image;
+    display: grid;
+  }
+  main section.view6 .bottom {
+    grid-area: bottom;
+  }
+  main section.view6 .bottom .text h1 {
+    font-size: 5rem;
+    width: 80%;
+  }
+  main section.view6 .top {
+    grid-area: top;
+  }
+}/*# sourceMappingURL=style.css.map */
